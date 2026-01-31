@@ -1,0 +1,5 @@
+# sistema de gestión de finanzas personales
+# utilización de modularización externa para desplegar menu
+import menu as m
+if __name__ == "__main__":
+    m.menu_principal()

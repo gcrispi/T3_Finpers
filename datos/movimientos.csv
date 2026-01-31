@@ -1,0 +1,13 @@
+﻿Id,Tipo,Categoria,Item,Fecha,Monto
+1,Ingesos,Obligatorio,AFC Chile,01-01-2025,102000
+2,Ingesos,Obligatorio,Ahorro AFP APV-DC,01-01-2025,10200
+3,Ingesos,Trabajo,Remuneración,01-01-2025,900000
+4,Ingesos,Varios,Otros Ingresos,01-01-2025,204000
+5,Egresos,Académico,Ingles,01-01-2025,30000
+6,Egresos,Académico,Python,01-01-2025,15000
+7,Egresos,Alimentos,Mercado,01-01-2025,12240
+8,Egresos,Alimentos,Supermercado,01-01-2025,61200
+9,Egresos,Banco,Banco Estado,01-01-2025,190000
+10,Egresos,Banco,Banco Santander,01-01-2025,190000
+11,Egresos,Entretenimiento,HBO+Netflix+Prime + Roku + Spotify,01-01-2025,10200
+12,Egresos,Entretenimiento,Salidas / Diversión / Comedy,01-01-2025,40800
