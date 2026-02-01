@@ -11,11 +11,11 @@ g.cargar_historico() ### Llamada a funcion para cargar datos
 
 def menu_principal():
     menu_dic = {
-            "1":"Mantenedor de Finanzas Personales",
-            "2":"Borrar Hitorico",
-            "3":"Reportes Totales",
-            "4":"Exportar XLSX,JSON",
-            "5":"Salir"
+            "1.-":"💰  Mantenedor de Finanzas Personales  🏦",
+            "2.-":"🗑️  Borrar Hitorico",
+            "3.-":"📜  Reportes Totales",
+            "4.-":"📨  Exportar XLSX,JSON",
+            "5.-":"🔚  Salir"
     }
     while True:
         print("*"*72)
@@ -48,7 +48,7 @@ def menu_principal():
 def menu_historico():
     menu_dic = {
             "1":"Limpiar Base Historico",
-            "2":"Menu Anterior"
+            "2":"🔚 Menu Anterior"
     }
     while True:
         print("*"*72)
@@ -78,11 +78,11 @@ def menu_crud():
     lista=[]
     
     menu_dic = {
-            "1":"Ingresar Nuevo Movimiento",
-            "2":"Buscar Movimiento",
-            "3":"Mostrar Movimientos",
-            "4":"Eliminar Movimiento",
-            "5":"Menu Anterior"
+            "1.-":"🆕  Ingresar Nuevo Movimiento",
+            "2.-":"🔍  Buscar Movimiento",
+            "3.-":"👁️  Mostrar Movimientos",
+            "4.-":"🗑️  Eliminar Movimiento",
+            "5.-":"🔚  Menu Anterior"
     }    
     while True:
         print("*"*72)
@@ -124,10 +124,10 @@ def menu_reportes():
         print(m)
         print("*"*72)
                 
-        print("1.- Totales Ingresos/Egresos")
-        print("2.- Total Categorias")
-        print("3.- Total Mensual")
-        print("4.- Menu Anterior")
+        print("1.- 🧾 Totales Ingresos/Egresos")
+        print("2.- 🧾 Gasto Mínimo")
+        print("3.- 🧾 Gasto Máximo")
+        print("4.- 🔚 Menu Anterior")
         
         opcion=input("Ingrese Opción :")
         if not opcion.isdigit():
@@ -139,9 +139,9 @@ def menu_reportes():
             case 1:
                 g.reportes_totales()
             case 2:
-                g.reportes_categorias()
+                g.reportes_minimo()
             case 3:
-                g.reportes_mensual()
+                g.reportes_maximo()
             case 4:
                 break
             case _:
@@ -156,7 +156,7 @@ def menu_exportar():
                 
         print("1.- Exportar Excel")
         print("2.- Exportar Json")
-        print("3.- Menu Anterior")
+        print("3.- 🔚 Menu Anterior")
         
         opcion=input("Ingrese Opción :")
         if not opcion.isdigit():

@@ -1,10 +1,13 @@
 Id,Tipo,Categoria,Item,Fecha,Monto
-109,Ingreso,AAAA,AAAA,01-04-2025,5000
-110,Egreso,EEEE,EEEE,02-02-2023,3000
-111,Ingreso,IIII,IIII,05-05-2025,4000
-112,Egreso,EEEE,EEEE,03-03-2023,3000
-113,Ingreso,WWWWW,WWWW,11-11-2021,2000
-114,Ingreso,OOOO,OOOO,06-09-2025,8000
-115,Egreso,EE,EE,01-01-2021,1000
-116,Egreso,EEEEEE,EEEEE,05-09-2025,6000
-117,Egreso,EEEE,EEEE,06-06-2023,7000
+1,Ingreso,Obligatorio,AFC Chile,01-01-2025,102000
+2,Ingreso,Obligatorio,Ahorro AFP APV-DC,01-01-2025,10200
+3,Ingreso,Trabajo,Remuneración,01-01-2025,900000
+4,Ingreso,Varios,Otros Ingresos,01-01-2025,204000
+5,Egreso,Académico,Ingles,01-01-2025,30000
+6,Egreso,Académico,Python,01-01-2025,15000
+7,Egreso,Alimentos,Mercado,01-01-2025,12240
+8,Egreso,Alimentos,Supermercado,01-01-2025,61200
+9,Egreso,Banco,Banco Estado,01-01-2025,190000
+10,Egreso,Banco,Banco Santander,01-01-2025,190000
+11,Egreso,Entretenimiento,HBO+Netflix+Prime + Roku + Spotify,01-01-2025,10200
+12,Egreso,Entretenimiento,Salidas / Diversión / Comedy,01-01-2025,40800

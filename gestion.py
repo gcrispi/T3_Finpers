@@ -22,7 +22,6 @@ ruta="T3_Finpers/datos/"
 # Funciones del Proyecto para gestionar Registros y Movimientos 
 movimientos = []
 
-
 def cargar_historico():
     # importar datos de prueba desde archivo CSV
     try:
@@ -173,27 +172,34 @@ def reportes_totales():
 
     lista=[]
     total=0
-    
+
     for valor in movimientos:
-        print(f"{valor["Tipo"]} {valor["Monto"]}")
+        #print(f"{valor["Tipo"]} {valor["Monto"]}")
         #monto=int(valor["Monto"])
         if valor["Tipo"] == "Ingreso":
             lista.append(int(valor["Monto"]))
         elif valor["Tipo"] == "Egreso":
             lista.append(int(valor["Monto"])*-1)
     
+    print(lista)
     total=sum(lista)
-
-    if total<0:
-        print(f"Tiene más gastos que ingresos: {total}")
-    else:
-        print(f"Finanzas Saludables: {total}")
     
-def reportes_categorias():
-    pass
+    if total<0:
+        print(f"Tiene más gastos que ingresos 👎🏼: {total}")
+    else:
+        print(f"Finanzas Saludables 👍: {total}")
+    #Retorna valores min/max como tupla
+    return tuple(lista)
+    
+def reportes_minimo():
+    val_min=0
+    val_min=min(reportes_totales())
+    print(f"El movimiento mínimo en sus finanzas es 🔈: {val_min}")
 
-def reportes_mensual():
-    pass        
+def reportes_maximo():
+    val_max=0
+    val_max=max(reportes_totales())
+    print(f"El movimiento máximo en sus finanzas es 🔉: {val_max}")        
 
 # Funciones para exportar a otros formatos
 def exportar_excel():
@@ -218,6 +224,3 @@ def exportar_json():
             print("Datos exportados exitosamente a JsonExportado.json")
     except Exception as e:
         print(f"Ocurrió un error al exportar los datos a JSON: {e}")
-    
-
-
