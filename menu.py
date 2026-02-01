@@ -1,8 +1,18 @@
+# modulo encargado de realizar la visualización de opciones y menu del 
+# sistema, estos fueron creados en listas para su mantenibilidad y uso
+# de diccionarios
+
 import gestion as g
+
+# Funciones de visualización para opciones del Menu del Sistema
+# inicializa lista con diccionaro desde archivo guardado
+
+g.cargar_historico() ### Llamada a funcion para cargar datos
+
 def menu_principal():
     menu_dic = {
-            "1":"Nuevo Movimiento",
-            "2":"Cargar Hitorico",
+            "1":"Mantenedor de Finanzas Personales",
+            "2":"Borrar Hitorico",
             "3":"Reportes Totales",
             "4":"Exportar XLSX,JSON",
             "5":"Salir"
@@ -37,9 +47,8 @@ def menu_principal():
 
 def menu_historico():
     menu_dic = {
-            "1":"Cargar Archivo CSV",
-            "2":"Limpiar Base Historico",
-            "3":"Menu Anterior"
+            "1":"Limpiar Base Historico",
+            "2":"Menu Anterior"
     }
     while True:
         print("*"*72)
@@ -58,20 +67,20 @@ def menu_historico():
             opcion=int(opcion)
         match opcion:
             case 1:
-                g.cargar_historico()
-            case 2:
                 pass
-            case 3:
+            case 2:
                 break
             case _:
                 print("Opcion Invalida, vuelva a intentar: ")
 
 def menu_crud():
+    # Se genera lista con datos desde el archivo
     lista=[]
+    
     menu_dic = {
             "1":"Ingresar Nuevo Movimiento",
-            "2":"Actualizar Movimiento",
-            "3":"Buscar Movimiento",
+            "2":"Buscar Movimiento",
+            "3":"Mostrar Movimientos",
             "4":"Eliminar Movimiento",
             "5":"Menu Anterior"
     }    
@@ -98,11 +107,11 @@ def menu_crud():
                 lista=g.ingresar_movimiento()
                 g.exportar_movimientos(lista)
             case 2:
-                pass
+                g.buscar_movimiento()
             case 3:
-                pass
+                g.mostrar_movimiento()
             case 4:
-                pass
+                g.eliminar_movimiento()
             case 5:
                 break
             case _:
@@ -117,7 +126,7 @@ def menu_reportes():
                 
         print("1.- Totales Ingresos/Egresos")
         print("2.- Total Categorias")
-        print("3.- Total Fechas")
+        print("3.- Total Mensual")
         print("4.- Menu Anterior")
         
         opcion=input("Ingrese Opción :")
@@ -128,11 +137,11 @@ def menu_reportes():
             opcion=int(opcion)
         match opcion:
             case 1:
-                pass
+                g.reportes_totales()
             case 2:
-                pass
+                g.reportes_categorias()
             case 3:
-                pass
+                g.reportes_mensual()
             case 4:
                 break
             case _:
@@ -145,8 +154,8 @@ def menu_exportar():
         print(m)
         print("*"*72)
                 
-        print("1.- Exportar JSON")
-        print("2.- Exportar Excel")
+        print("1.- Exportar Excel")
+        print("2.- Exportar Json")
         print("3.- Menu Anterior")
         
         opcion=input("Ingrese Opción :")
@@ -157,9 +166,9 @@ def menu_exportar():
             opcion=int(opcion)
         match opcion:
             case 1:
-                pass
+                g.exportar_excel()
             case 2:
-                pass
+                g.exportar_json()
             case 3:
                 break
             case _:

@@ -1,0 +1,82 @@
+[
+    {
+        "Id": "Id",
+        "Tipo": "Tipo",
+        "Categoria": "Categoria",
+        "Item": "Item",
+        "Fecha": "Fecha",
+        "Monto": "Monto"
+    },
+    {
+        "Id": "109",
+        "Tipo": "Ingreso",
+        "Categoria": "AAAA",
+        "Item": "AAAA",
+        "Fecha": "01-04-2025",
+        "Monto": "5000"
+    },
+    {
+        "Id": "110",
+        "Tipo": "Egreso",
+        "Categoria": "EEEE",
+        "Item": "EEEE",
+        "Fecha": "02-02-2023",
+        "Monto": "3000"
+    },
+    {
+        "Id": "111",
+        "Tipo": "Ingreso",
+        "Categoria": "IIII",
+        "Item": "IIII",
+        "Fecha": "05-05-2025",
+        "Monto": "4000"
+    },
+    {
+        "Id": "112",
+        "Tipo": "Egreso",
+        "Categoria": "EEEE",
+        "Item": "EEEE",
+        "Fecha": "03-03-2023",
+        "Monto": "3000"
+    },
+    {
+        "Id": "113",
+        "Tipo": "Ingreso",
+        "Categoria": "WWWWW",
+        "Item": "WWWW",
+        "Fecha": "11-11-2021",
+        "Monto": "2000"
+    },
+    {
+        "Id": "114",
+        "Tipo": "Ingreso",
+        "Categoria": "OOOO",
+        "Item": "OOOO",
+        "Fecha": "06-09-2025",
+        "Monto": "8000"
+    },
+    {
+        "Id": "115",
+        "Tipo": "Egreso",
+        "Categoria": "EE",
+        "Item": "EE",
+        "Fecha": "01-01-2021",
+        "Monto": "1000"
+    },
+    {
+        "Id": "116",
+        "Tipo": "Egreso",
+        "Categoria": "EEEEEE",
+        "Item": "EEEEE",
+        "Fecha": "05-09-2025",
+        "Monto": "6000"
+    },
+    {
+        "Id": "117",
+        "Tipo": "Egreso",
+        "Categoria": "EEEE",
+        "Item": "EEEE",
+        "Fecha": "06-06-2023",
+        "Monto": "7000"
+    }
+]

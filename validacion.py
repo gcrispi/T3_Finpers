@@ -1,4 +1,7 @@
+# modulo encargado de realizar validaciones de ingreso de movimiento
+
 from datetime import date
+
 
 def valida_movimiento(num_fila):
     dic_movimiento={}
